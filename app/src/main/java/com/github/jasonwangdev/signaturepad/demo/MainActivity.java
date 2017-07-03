@@ -1,26 +1,33 @@
 package com.github.jasonwangdev.signaturepad.demo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
-import com.github.jasonwangdev.signaturepad.SignaturePadDialogFragment;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn).setOnClickListener(this);
-    }
+        Log.d("MainActivity", "onCreate");
+        for (Fragment fragment : getSupportFragmentManager().getFragments())
+        {
+            if (null != fragment)
+                Log.d("TAG", fragment.toString());
+        }
 
-
-    @Override
-    public void onClick(View view) {
-        SignaturePadDialogFragment dialogFragment = SignaturePadDialogFragment.getInstance();
-        dialogFragment.show(getSupportFragmentManager(), "SignaturePadDialogFragment");
+        FragmentManager fm = getSupportFragmentManager();
+        MainFragment mainFragment = (MainFragment) fm.findFragmentByTag("MainFragment");
+        if (null == mainFragment)
+            mainFragment = new MainFragment();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.layout, mainFragment, "MainFragment");
+        ft.commit();
     }
 
 }
