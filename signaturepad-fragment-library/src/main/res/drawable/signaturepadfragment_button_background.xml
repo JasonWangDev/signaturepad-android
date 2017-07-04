@@ -3,8 +3,8 @@
 
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#3287FF" />
-            <corners android:radius="3dp" />
+            <solid android:color="@color/SignaturePadFragment.Button.BackgroundColor" />
+            <corners android:radius="@dimen/SignaturePadFragment.Button.CornersRadius" />
         </shape>
     </item>
 

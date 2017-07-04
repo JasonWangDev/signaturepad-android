@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- SignaturePadFragment Style -->
+    <style name="SignaturePadFragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/SignaturePadFragment.Padding</item>
+    </style>
+
+    <!-- SignaturePad Style -->
+    <style name="SignaturePadFragment.SignaturePad">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">@dimen/SignaturePadFragment.SignaturePad.Margin</item>
+        <item name="android:background">@drawable/signaturepadfragment_signaturepad_background</item>
+    </style>
+
+    <!-- HintText Style -->
+    <style name="SignaturePadFragment.HintText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/SignaturePadFragment.HintText.MarginBottom</item>
+        <item name="android:textColor">@color/SignaturePadFragment.HintText.TextColor</item>
+    </style>
+
+    <!-- BaseLine Style -->
+    <style name="SignaturePadFragment.BaseLine">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/SignaturePadFragment.BaseLine.Height</item>
+        <item name="android:layout_marginBottom">@dimen/SignaturePadFragment.BaseLine.MarginBottom</item>
+        <item name="android:layout_marginEnd">@dimen/SignaturePadFragment.BaseLine.MarginRight</item>
+        <item name="android:layout_marginLeft">@dimen/SignaturePadFragment.BaseLine.MarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/SignaturePadFragment.BaseLine.MarginRight</item>
+        <item name="android:layout_marginStart">@dimen/SignaturePadFragment.BaseLine.MarginLeft</item>
+        <item name="android:background">@color/SignaturePadFragment.BaseLine.Color</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="SignaturePadFragment.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/SignaturePadFragment.Button.Margin</item>
+        <item name="android:background">@drawable/signaturepadfragment_button_background</item>
+        <item name="android:textColor">@color/SignaturePadFragment.Button.TextColor</item>
+    </style>
+
+</resources>

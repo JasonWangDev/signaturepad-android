@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/signaturepad-android.iml" filepath="$PROJECT_DIR$/signaturepad-android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/signaturepad-library/signaturepad-library.iml" filepath="$PROJECT_DIR$/signaturepad-library/signaturepad-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signaturepad-fragment-library/signaturepad-fragment-library.iml" filepath="$PROJECT_DIR$/signaturepad-fragment-library/signaturepad-fragment-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/signaturepad-library/signaturepad-library.iml" filepath="$PROJECT_DIR$/signaturepad-library/signaturepad-library.iml" />
     </modules>
   </component>

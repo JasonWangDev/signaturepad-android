@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="SignaturePadFragment.PleaseSign">请签名</string>
+    <string name="SignaturePadFragment.Clear">清除</string>
+    <string name="SignaturePadFragment.Save">储存</string>
+
+</resources>

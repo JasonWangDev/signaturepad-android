@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SignaturePadFragment -->
+    <!-- 背景顏色 -->
+    <color name="SignaturePadFragment.BackgroundColor">#FFF</color>
+
+    <!-- SignaturePad -->
+    <!-- 邊框顏色 -->
+    <color name="SignaturePadFragment.SignaturePad.StrokeColor">#2B2B2B</color>
+
+    <!-- HintText -->
+    <!-- 文字顏色 -->
+    <color name="SignaturePadFragment.HintText.TextColor">#BCBCBC</color>
+
+    <!-- BaseLine -->
+    <!-- 顏色 -->
+    <color name="SignaturePadFragment.BaseLine.Color">#BCBCBC</color>
+
+    <!-- Button -->
+    <!-- 背景色-->
+    <color name="SignaturePadFragment.Button.BackgroundColor">#3287FF</color>
+    <!-- 文字顏色 -->
+    <color name="SignaturePadFragment.Button.TextColor">#FFF</color>
+
+</resources>

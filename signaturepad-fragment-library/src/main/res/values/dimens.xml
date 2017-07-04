@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- SignaturePadFragment -->
+    <!-- 內間距 -->
+    <dimen name="SignaturePadFragment.Padding">5dp</dimen>
+
+    <!-- SignaturePad -->
+    <!-- 外間距 -->
+    <dimen name="SignaturePadFragment.SignaturePad.Margin">5dp</dimen>
+    <!-- 邊框寬度 -->
+    <dimen name="SignaturePadFragment.SignaturePad.StrokeWidth">1.5dp</dimen>
+    <!-- 圓角半徑 -->
+    <dimen name="SignaturePadFragment.SignaturePad.CornersRadius">3dp</dimen>
+
+    <!-- HintText -->
+    <!-- 下間距 -->
+    <dimen name="SignaturePadFragment.HintText.MarginBottom">15dp</dimen>
+
+    <!-- BaseLine -->
+    <!-- 高度 -->
+    <dimen name="SignaturePadFragment.BaseLine.Height">1.5dp</dimen>
+    <!-- 下間距 -->
+    <dimen name="SignaturePadFragment.BaseLine.MarginBottom">5dp</dimen>
+    <!-- 右間距 -->
+    <dimen name="SignaturePadFragment.BaseLine.MarginRight">20dp</dimen>
+    <!-- 左間距 -->
+    <dimen name="SignaturePadFragment.BaseLine.MarginLeft">20dp</dimen>
+
+    <!-- Button -->
+    <!-- 外間距 -->
+    <dimen name="SignaturePadFragment.Button.Margin">5dp</dimen>
+    <!-- 圓角半徑 -->
+    <dimen name="SignaturePadFragment.Button.CornersRadius">3dp</dimen>
+
+
+</resources>
