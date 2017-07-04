@@ -2,10 +2,11 @@ package com.github.jasonwangdev.signaturepad;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 
 import com.github.gcacace.signaturepad.views.SignaturePad;
@@ -14,25 +15,27 @@ import com.github.gcacace.signaturepad.views.SignaturePad;
  * Created by jason on 2017/7/3.
  */
 
-public class SignaturePadFragment extends Fragment implements SignaturePad.OnSignedListener, View.OnClickListener {
+public class SignaturePadDialogFragment extends DialogFragment implements SignaturePad.OnSignedListener, View.OnClickListener {
 
     private OnSignaturePadListener onSignaturePadListener;
 
     private SignaturePad signaturePad;
 
 
-    public static SignaturePadFragment getInstance() {
+    public static SignaturePadDialogFragment getInstance() {
         Bundle bundle = new Bundle();
 
-        SignaturePadFragment dialogFragment = new SignaturePadFragment();
-        dialogFragment.setArguments(bundle);
+        SignaturePadDialogFragment signaturePadDialogFragment = new SignaturePadDialogFragment();
+        signaturePadDialogFragment.setArguments(bundle);
 
-        return dialogFragment;
+        return signaturePadDialogFragment;
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        setNoTitle();
+
         View view = inflater.inflate(R.layout.dialogfragment_signaturepad, container, false);
 
         signaturePad = view.findViewById(R.id.signaturepad);
@@ -50,6 +53,12 @@ public class SignaturePadFragment extends Fragment implements SignaturePad.OnSig
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        setWindowSize();
+    }
 
     @Override
     public void onClick(View view) {
@@ -63,6 +72,8 @@ public class SignaturePadFragment extends Fragment implements SignaturePad.OnSig
                 Bitmap sign = signaturePad.getTransparentSignatureBitmap();
                 onSignaturePadListener.onSaved(sign);
             }
+
+            dismiss();
         }
     }
 
@@ -85,6 +96,16 @@ public class SignaturePadFragment extends Fragment implements SignaturePad.OnSig
 
     public void setOnSignaturePadListener(OnSignaturePadListener onSignaturePadListener) {
         this.onSignaturePadListener = onSignaturePadListener;
+    }
+
+
+    private void setNoTitle() {
+        getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+    }
+
+    private void setWindowSize() {
+        getDialog().getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT);
     }
 
 }

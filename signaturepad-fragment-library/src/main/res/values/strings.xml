@@ -1,7 +1,0 @@
-<resources>
-
-    <string name="SignaturePadFragment.PleaseSign">Please Sign</string>
-    <string name="SignaturePadFragment.Clear">Clear</string>
-    <string name="SignaturePadFragment.Save">Save</string>
-
-</resources>

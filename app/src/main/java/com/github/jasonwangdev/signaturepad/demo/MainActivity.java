@@ -14,13 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("MainActivity", "onCreate");
-        for (Fragment fragment : getSupportFragmentManager().getFragments())
-        {
-            if (null != fragment)
-                Log.d("TAG", fragment.toString());
-        }
-
         FragmentManager fm = getSupportFragmentManager();
         MainFragment mainFragment = (MainFragment) fm.findFragmentByTag("MainFragment");
         if (null == mainFragment)
