@@ -38,11 +38,11 @@ public class SignaturePadDialogFragment extends DialogFragment implements Signat
 
         View view = inflater.inflate(R.layout.dialogfragment_signaturepad, container, false);
 
-        signaturePad = view.findViewById(R.id.signaturepad);
+        signaturePad = (SignaturePad) view.findViewById(R.id.signaturepad);
         signaturePad.setOnSignedListener(this);
 
-        Button btnClear = view.findViewById(R.id.btn_clear);
-        Button btnSave = view.findViewById(R.id.btn_save);
+        Button btnClear = (Button) view.findViewById(R.id.btn_clear);
+        Button btnSave = (Button) view.findViewById(R.id.btn_save);
 
         btnClear.setEnabled(false);
         btnSave.setEnabled(false);

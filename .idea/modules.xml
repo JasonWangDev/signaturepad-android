@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/SignaturePadDemo.iml" filepath="$PROJECT_DIR$/SignaturePadDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/signaturepad-android.iml" filepath="$PROJECT_DIR$/signaturepad-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signaturepad-dialogfragment-android.iml" filepath="$PROJECT_DIR$/signaturepad-dialogfragment-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signaturepad-dialogfragment-library/signaturepad-dialogfragment-library.iml" filepath="$PROJECT_DIR$/signaturepad-dialogfragment-library/signaturepad-dialogfragment-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/signaturepad-dialogfragment-library/signaturepad-dialogfragment-library.iml" filepath="$PROJECT_DIR$/signaturepad-dialogfragment-library/signaturepad-dialogfragment-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/signaturepad-fragment-library/signaturepad-fragment-library.iml" filepath="$PROJECT_DIR$/signaturepad-fragment-library/signaturepad-fragment-library.iml" />
     </modules>
